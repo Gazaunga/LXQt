@@ -10,4 +10,9 @@ done
 wget http://int10h.org/oldschool-pc-fonts/download/ultimate_oldschool_pc_font_pack_v1.0.zip
 unzip ultimate_oldschool_pc_font_pack_v1.0.zip
 
+# Adobe
+git clone https://github.com/adobe-fonts/source-code-pro.git
+cd source-code-pro
+sh build.sh
+
 fc-cache -v
