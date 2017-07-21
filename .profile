@@ -27,6 +27,3 @@ else
 if [ -x rubymine ] then
 export EDITOR=rubymine
 end
-
-# remap shift-space to underscore for 60% keyboards
-xmodmap -e 'keycode 65 = space underscore space'
