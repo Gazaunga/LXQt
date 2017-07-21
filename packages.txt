@@ -1,0 +1,9 @@
+lxqt
+oxygen-icons
+lxqt-connman-applet-git
+sddm
+xscreensaver
+i3blocks
+i3
+cmus
+slimlock
