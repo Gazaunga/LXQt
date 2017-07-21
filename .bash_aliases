@@ -31,3 +31,5 @@ alias weather='curl http://wttr.in/hacienda_heights'
 alias _='sudo'
 
 alias home='cd ~'
+
+alias work='pomodoro &'
