@@ -23,3 +23,11 @@ alias exe='sudo chmod +x'
 
 # make `less` not clear the screen upon exit
 alias less='less -X'
+
+alias n='nano'
+
+alias weather='curl http://wttr.in/hacienda_heights'
+
+alias _='sudo'
+
+alias home='cd ~'
