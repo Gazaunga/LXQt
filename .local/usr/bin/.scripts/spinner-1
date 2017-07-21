@@ -1,0 +1,30 @@
+#!/bin/bash
+display_wait_animation () {
+        local process="${1}"
+        local animation_delay="0.5"
+        local animation_chars=('◐' '◓' '◑' '◒')
+
+        while ps -a | awk '{print $1}' | grep -q "${process}";
+        do
+                for animation_char in ${DISK_IDS[@]};
+                do
+                        printf " [%c]  " "${animation_char}"
+                        sleep "${animation_delay}"
+                        printf "%-6s" "\b"
+                done
+        done
+        printf "%-4s" " "
+        printf "%-4s" "\b"
+}
+
+usage () {
+        echo "Usage: $(basename "$0") [command]"
+}
+
+if [ $# -eq 0 ];
+then
+        usage
+        exit 1
+else
+        display_wait_animation "$!"
+fi
