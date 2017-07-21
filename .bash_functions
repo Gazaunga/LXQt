@@ -10,3 +10,13 @@ git pull origin master
 ls -a
 $EDITOR index.html
 }
+
+# List contents after cd
+function cd()
+{
+ builtin cd "$*" && ls
+}
+
+# Create a new directory and enter it
+mkd() { mkdir $1 && cd $1; }
+
