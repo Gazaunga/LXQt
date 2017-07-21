@@ -1,0 +1,59 @@
+Setup:
+
+Install i3 window manager - sudo apt-get install i3
+Login to an LXQT session
+Open the LXQT Session Settings
+5. Change the Window Manager to i3 (/user/bin/i3)
+6. Under 'LXQt Modules' Uncheck the 'Desktop' and 'Global Keyboard Shortcuts'
+7. Close the LXQt Session Settings
+Logout and Login to the LXQt session again
+Press Enter when the little black i3 dialog appears
+There should be both the LXQT Panel and the i3bar at the bottom. Leave the i3bar there in order to compare the desktop switcher behavior between i3 and LXQt-Panel
+
+Steps To Reproduce Behavior:
+
+Mess around and open windows from the Lubuntu Application Menu
+Note how applications open in panels. It is not important to become familiar with resizing etc. for this setup. i3 usage
+Open an application in the current desktop
+Press: 'Mod Key' + '4'
+Open an application in that desktop
+Press: 'Mod Key' + '7'
+Open an application in that desktop
+Press: 'Mod Key' + '9'
+. . . and so on. . .
+('Mod' + 'Shift' + 'q' exits an application)
+
+Present Behavior: (lxqt-panel desktop switcher only has partial functionality with i3-wm)
+When creating new desktop workstations in i3, the numbers of the workstations in i3bar do not correlate to the workstation numbers in the LXQt Panel workstation switcher.
+
+Desired Behavior:
+When creating and switching workstations in i3, the LXQt workstation switcher plugin would behave as the i3bar does, displaying the numbers associated with specific workstations as they were opened.
+
+*libi3ipc-glib for i3 Workstation *
+That XFCE plugin uses a library, libi3ipc-glib, that may also be helpful for this feature.
+
+
+
+http://feeblenerd.blogspot.com/2015/11/pretty-i3-with-xfce.html
+
+To Reproduce:
+
+View both i3bar and the LXQt Panel simultaneously on the same session.
+Create multiple workstations in i3, such that their numbers on i3bar are not incremental. ie: 1, 4, 6, 9
+Results on the LXQT Panel
+
+While the i3bar shows proper non-incremental numbers, the LXQT Panel only shows incremental numbers up to the total number of i3 workstations.
+The numbers in LXQT do not correspond to the number associated with the desktop/workstation in i3.
+It will look something like below:
+
+i3bar:--| 1 | 4 | 6 | 9 | (desired)
+
+lxqt:----| 1 | 2 | 3 | 4 |
+
+lxqt workstations will alway be represented by incremental/consecutive integers, whereas i3 workstations are represented by non-consecutive integers, representing the number the user entered to represent the workstation.
+
+The default in plugin-desktopswitch is to show the number of virtual desktop. But what i3 shows is the name of the desktop.
+
+everything you need to do is change the "Desktop labels:" setting in Desktop switcher settings.
+
+
