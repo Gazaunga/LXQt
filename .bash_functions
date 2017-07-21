@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create new web project folder and grab html5 boilerplate
-def website() {
+website() {
 mkdir $1
 cd $1
 git init
@@ -12,7 +12,7 @@ $EDITOR index.html
 }
 
 # List contents after cd
-function cd()
+cd()
 {
  builtin cd "$*" && ls
 }
