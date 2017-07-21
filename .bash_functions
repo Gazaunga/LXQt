@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create new web project folder and grab html5 boilerplate
-def website {
+def website() {
 mkdir $1
 cd $1
 git init
