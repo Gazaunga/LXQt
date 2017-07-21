@@ -8,4 +8,5 @@ git init
 git remote add origin https://github.com/Gazaunga/HTML5-Boilerplate.git
 git pull origin master
 ls -a
+$EDITOR index.html
 }
