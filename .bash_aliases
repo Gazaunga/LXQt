@@ -33,3 +33,5 @@ alias _='sudo'
 alias home='cd ~'
 
 alias work='pomodoro &'
+
+alias scripts="cd ~/.local/usr/bin/.scripts"
