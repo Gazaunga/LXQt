@@ -7,3 +7,9 @@ i3blocks-git
 i3gaps-git
 cmus
 slimlock
+mpd
+ncmpcpp
+neofetch-git
+tint2
+conky
+ttf-font-awesome
