@@ -1,0 +1,17 @@
+yaourt -S --noconfirm --noedit pacaur
+pacaur -S --noconfirm emacs \
+  ubo-icons \
+  lxqt-connman-applet-git \
+  sddm \
+  xscreensaver \
+  i3blocks-git \
+  i3gaps-git \
+  cmus \
+  slimlock \
+  mpd \
+  ncmpcpp \
+  neofetch-git \
+  conky \
+  python2-nvim \
+  cmus \
+  ttf-font-awesome 
