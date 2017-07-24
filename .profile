@@ -12,16 +12,16 @@ export TERMINAL=$terminal
 if [ -x vim ] then
 export EDITOR=vim
 elif
-if [ -x vim ] then
+if [ -x nvim ] then
 export EDITOR=nvim
 elif
-if [ -x vim ] then
+if [ -x subl ] then
 export EDITOR=subl
 elif
 if [ -x nano ] then
 export EDITOR=nano
 elif
-if [ -x vim ] then
+if [ -x emacs ] then
 export EDITOR=emacs
 else
 if [ -x rubymine ] then
