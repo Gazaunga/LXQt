@@ -1,0 +1,54 @@
+cmd = "sudo apt-get -y install"
+
+%%%
+
+update
+
+build-essential python-dev git nodejs-legacy npm gnome-tweak-tool openjdk-8-jdk
+
+flex bison
+
+libpcap-dev libnet1-dev rpcbind openssh-server
+
+nmap
+
+apache2 apache2-utils libapache2-mod-php
+
+php php-mcrypt php-mysql php-mbstring php-dom
+
+git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
+
+libsqlite3-dev
+
+mysql-server libmysqlclient-dev
+
+autoconf automake
+
+vim curl
+
+libkrb5-dev
+
+default-jre
+
+default-jdk
+
+unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
+
+
+filezilla
+
+xpad
+
+cpu-checker
+
+qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
+
+virt-manager
+
+lib32z1 lib32ncurses5 lib32bz2-1.0 lib32stdc++6
+
+rpm
+
+alien dpkg-de
+
+
