@@ -1,0 +1,9 @@
+#cmd="sudo dnf -y install"
+
+git-core zlib zlib-devel gcc-c++ patch readline readline-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison curl sqlite-devel
+
+nodejs-epel-release postgresql-server postgresql-contrib
+
+phpPgAdmin pgadmin3
+
+zsh nano
