@@ -13,20 +13,3 @@ neofetch-git
 tint2
 conky
 ttf-font-awesome
-
-yaourt -S pacaur
-pacaur -S lxqt \
-  oxygen-icons \
-  lxqt-connman-applet-git \
-  sddm \
-  xscreensaver \
-  i3blocks-git \
-  i3gaps-git \
-  cmus \
-  slimlock \
-  mpd \
-  ncmpcpp \
-  neofetch-git \
-  tint2 \
-  conky \
-  ttf-font-awesome \
