@@ -35,3 +35,5 @@ alias home='cd ~'
 alias work='pomodoro &'
 
 alias scripts="cd ~/.local/usr/bin/.scripts"
+
+alias append="echo '$1' | sudo tee -a '$2'"
