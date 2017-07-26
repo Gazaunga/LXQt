@@ -1,0 +1,12 @@
+# WALLPAPERS!
+
+XDG_CONFIG_HOME = $HOME/.config
+XDG_DATA_HOME = $HOME/.local/share
+
+WALLPAPER_URL = https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-503808.jpg
+
+CURL_FLAGS = --create-dirs
+
+curl $(WALLPAPER_URL) $(CURL_FLAGS) -O $(XDG_DATA_HOME)/wallpaper.png
+convert $(XDG_DATA_HOME)/wallpaper.png -blur 5x4 \
+        $(XDG_DATA_HOME)/wallpaper.png-blur.png
