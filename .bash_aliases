@@ -37,3 +37,8 @@ alias work='pomodoro &'
 alias scripts="cd ~/.local/usr/bin/.scripts"
 
 alias append="echo '$1' | sudo tee -a '$2'"
+
+alias glg='git log --graph --pretty=format":%C(yellow)%h%Cblue%d%Creset %s %C(white) %an,%ar%Creset" --abbrev-commit --decorate'
+alias glgh='git log --graph --pretty=format":%C(yellow)%h%Cblue%d%Creset %s %C(white) %an,%ar%Creset" --abbrev-commit --decorate | head'
+alias glo='git log --oneline --decorate'
+alias gloh='git log --oneline --decorate | head'
